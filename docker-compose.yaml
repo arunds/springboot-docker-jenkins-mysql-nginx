@@ -28,7 +28,7 @@ services:
   app:
     image: arunds/springboot-data-docker-mysql-app:0.0.1-SNAPSHOT
     restart: always
-    working_dir: /tasks
+    working_dir: /posts
     ports:
       - "8080:8080"
     expose:
