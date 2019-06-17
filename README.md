@@ -1,21 +1,22 @@
 # springboot-docker-jenkins-mysql-nginx
-springboot docker jenkins mysql nginx
+springboot application with docker, jenkins, mysql and nginx
 
 ## Build & Run the spring boot application
-springboot-docker-jenkins-mysql-nginx\springboot-data-docker-mysql-app> mvn install dockerfile:build
-springboot-docker-jenkins-mysql-nginx\springboot-data-docker-mysql-app> mvn dockerfile:push
-springboot-docker-jenkins-mysql-nginx> docker-compose up
+springboot-docker-jenkins-mysql-nginx\springboot-data-docker-mysql-app> __mvn install dockerfile:build__  
+springboot-docker-jenkins-mysql-nginx\springboot-data-docker-mysql-app> __mvn dockerfile:push__    
+springboot-docker-jenkins-mysql-nginx> __docker-compose up__  
 
-## After staring the application you can acccess the application in the below URL
+## After the container started we can acccess the application in the below URL  
+IP Adress of the docker VM  
 http://192.168.99.100:8080/
 
 ![Welcome Screen](screenshots/hello.PNG?raw=true "Welcome Screen")
 
 ## Run the Jenkkins Docker Instance
-cd springboot-docker-jenkins-mysql-nginx/jenkins
-springboot-docker-jenkins-mysql-nginx/jenkins> docker-compose up
+cd springboot-docker-jenkins-mysql-nginx/jenkins  
+springboot-docker-jenkins-mysql-nginx/jenkins> __docker-compose up__ 
 
-Access the Jenkins in the following URL
+Access the Jenkins in the following URL  
 http://192.168.99.100:8085/
 
 ![Jenkins Login](screenshots/jenkins.PNG?raw=true "Jenkins Home Screen")
