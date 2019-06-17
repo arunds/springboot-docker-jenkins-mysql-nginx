@@ -17,8 +17,7 @@ node() {
         withDockerRegistry(credentialsId: 'dockerHub', url: 'https://index.docker.io/v1/') {
             sh 'docker tag arunds/springboot-data-docker-mysql-app:0.0.1-SNAPSHOT  arunds/springboot-data-docker-mysql-app'
             sh 'docker push arunds/springboot-data-docker-mysql-app'			
-			sh 'docker-compose build --no-cache'
-			sh 'docker-compose up -d --no-recreate'
+			sh 'docker-compose up --force-recreate'
         }
 
     }
