@@ -7,6 +7,8 @@
 </head>
 <body>
     <h2 class="hello-title">Hello ${name}!</h2>
+    <h2 class="hello-title">Hello ${newfeature}!</h2>
+    
     <script src="/js/main.js"></script>
 </body>
 </html>

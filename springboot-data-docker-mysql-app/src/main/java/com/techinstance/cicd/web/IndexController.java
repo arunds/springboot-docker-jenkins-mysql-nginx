@@ -23,12 +23,14 @@ public class IndexController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showIndex(final Model model) {
 		model.addAttribute("name", "Arun S");
+		model.addAttribute("newfeature", "I am running from Docker");
 		return "index";
 	}
 
 	@RequestMapping(value = "/createPost", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody 
 	public Post createNote(@Valid @RequestBody Post post) {
+		postRepository.save( new Post("This is first POST!!!!"));
 		return postRepository.save(post);
 	}
 }
