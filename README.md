@@ -24,13 +24,13 @@ http://192.168.99.100:8085/
 Once the jenkins instance started, need to configure below steps
 Create pipleline projectect using the github URL  
 Add github,docker credentials in jenkins  
-Configure webhook to trigger automatic build 
+Configure webhook to trigger automatic build   
 
 ![Jenkins Job](screenshots/jenkins-job.PNG?raw=true "Jenkins Job Screen")
 
 Once the jenkins job is started, we can see the below containers in docker console
 
-![Docker Console](screenshots/docker-ps.PNG.PNG?raw=true "Docker Terminal Screen")
+![Docker Console](screenshots/docker-ps.PNG?raw=true "Docker Terminal Screen")
 
 
 Below is the application running on docker container
