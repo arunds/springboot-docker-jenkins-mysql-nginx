@@ -22,9 +22,10 @@ http://192.168.99.100:8085/
 ![Jenkins Login](screenshots/jenkins.PNG?raw=true "Jenkins Home Screen")
 
 ## Jenkins Configuration
-Once the jenkins instance started, need to configure below things
-Create pipleline projectect using the github URL
-Add github credentials in jenkins
-Configure webhook to trigger automatic build
+Once the jenkins instance started, need to configure below steps
+Create pipleline projectect using the github URL  
+Add github,docker credentials in jenkins  
+Configure webhook to trigger automatic build  
 
 ![Jenkins Job](screenshots/jenkins-job.PNG?raw=true "Jenkins Job Screen")
+
