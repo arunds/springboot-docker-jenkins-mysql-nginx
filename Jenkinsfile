@@ -1,6 +1,6 @@
 #!groovy
 
-properties([pipelineTriggers([pollSCM('H/10 * * * *')])])
+properties([pipelineTriggers([pollSCM('H/1 * * * *')])])
 
 node() {
     stage('Checkout'){
