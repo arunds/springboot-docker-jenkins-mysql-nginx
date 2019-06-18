@@ -9,8 +9,7 @@ services:
    - 443:443
    volumes:
    - ./nginx/conf.d:/etc/nginx/conf.d
-
-app-mysql:
+  app-mysql:
    container_name: app-mysql
    image: mysql/mysql-server:5.7
    environment:
@@ -20,10 +19,9 @@ app-mysql:
     MYSQL_ROOT_PASSWORD: Test@Data@321
     MYSQL_ROOT_HOST: '%'
    ports:
-   - "3306:3306"
+    - "3306:3306"
    restart: always
-  
-app:
+  app:
     image: arunds/springboot-data-docker-mysql-app:0.0.1-SNAPSHOT
     restart: always
     working_dir: /posts
