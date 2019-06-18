@@ -23,7 +23,7 @@ app-mysql:
    - "3306:3306"
    restart: always
   
-  app:
+app:
     image: arunds/springboot-data-docker-mysql-app:0.0.1-SNAPSHOT
     restart: always
     working_dir: /posts
