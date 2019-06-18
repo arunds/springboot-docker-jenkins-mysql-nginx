@@ -9,10 +9,8 @@ services:
    - 443:443
    volumes:
    - ./nginx/conf.d:/etc/nginx/conf.d
-   depends_on:
-   - app
- 
-  app-mysql:
+
+app-mysql:
    container_name: app-mysql
    image: mysql/mysql-server:5.7
    environment:
@@ -33,6 +31,6 @@ services:
       - "8080:8080"
     expose:
       - "8080"
-    command: mvn clean spring-boot:run  
-    depends_on:      
-      - app-mysql      
+    depends_on:  
+      - app-nginx
+      - app-mysql   
