@@ -1,6 +1,6 @@
 version: '3'
 services:
-  nginx:
+  app-nginx:
    container_name: app-nginx
    image: nginx:1.13
    restart: always
