@@ -1,4 +1,7 @@
 # springboot-docker-jenkins-mysql-nginx
+Repository URL
+https://github.com/arunds/springboot-docker-jenkins-mysql-nginx.git
+
 springboot application with docker, jenkins, mysql and nginx
 
 ## Build & Run the spring boot application without Jenkins
